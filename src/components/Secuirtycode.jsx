@@ -14,9 +14,9 @@ const Secuirtycode = () => {
 
 
     const loginbtn = () => {
-        if (Email == 'rohitgodara@gmail.com' && Pass == 'amazon' || Email == 'godararinku@gmail.com' && Pass == 'amazon') {
+        if (Email === 'rohitgodara@gmail.com' && Pass === 'amazon' || Email === 'godararinku@gmail.com' && Pass === 'amazon') {
             nav('/main');
-        } else if (Email == '' && Pass == '') {
+        } else if (Email === '' || Pass === '') {
             Setinvalideamil('enter username first');
             Setinvalidpass('enter password first');
         } else {
@@ -28,9 +28,9 @@ const Secuirtycode = () => {
         nav('/');
     }
     const loginpage = () => {
-        if (Otp == '0000') {
+        if (Otp === '0000') {
             nav('/');
-        } else if (Otp == '') {
+        } else if (Otp === '') {
             Setinvalidotp('First enter otp');
         }
         else {

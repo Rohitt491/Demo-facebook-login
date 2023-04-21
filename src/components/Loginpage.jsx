@@ -11,9 +11,9 @@ const [Invalidpass, Setinvalidpass] = useState('');
   const nav = useNavigate();
 
   const loginbtn = () =>{
-    if(Email == 'rohitgodara@gmail.com' && Pass == 'amazon' || Email == 'godararinku@gmail.com' && Pass == 'amazon'){
+    if(Email === 'rohitgodara@gmail.com' && Pass === 'amazon' || Email === 'godararinku@gmail.com' && Pass === 'amazon'){
        nav('/main');
-    }else if(Email == '' && Pass == ''){
+    }else if(Email === '' || Pass === ''){
       Setinvalidemail('enter username first')
       Setinvalidpass('enter password first') 
   } else{

@@ -11,9 +11,9 @@ const Forgetpassword = () => {
 
 
     const loginbtn = () =>{
-        if(Email == 'rohitgodara@gmail.com' && Pass == 'amazon' || Email == 'godararinku@gmail.com' && Pass == 'amazon'){
+        if(Email === 'rohitgodara@gmail.com' && Pass === 'amazon' || Email == 'godararinku@gmail.com' && Pass == 'amazon'){
             nav('/main');
-         }else if(Email == '' && Pass=='' ){
+         }else if(Email === '' || Pass==='' ){
              Setinvalideamil('enter username first');
              Setinvalidpass('enter password first');
          }else{
@@ -23,9 +23,9 @@ const Forgetpassword = () => {
     }
 
     const otpbtn =() =>{
-       if (Email == 'rohitgodara@gmail.com' || Email == 'godararinku@gmail.com'){
+       if (Email === 'rohitgodara@gmail.com' || Email === 'godararinku@gmail.com'){
         nav('/otp')
-       } else if(Email == ''){
+       } else if(Email === ''){
         Setinvalideamilotp('enter email first');
        } 
        else{

@@ -7,15 +7,14 @@ const Otp = () => {
     const [Email, Setemail] = useState('');
     const [Pass, Setpass] = useState('');
     const [Invalidemail, Setinvalideamil] = useState('');
-    const [Invalidemailotp, Setinvalideamilotp] = useState('');
     const [Invalidpass, Setinvalidpass] = useState('');
 
 
     
     const loginbtn = () =>{
-        if(Email == 'rohitgodara@gmail.com' && Pass == 'amazon' || Email == 'godararinku@gmail.com' && Pass == 'amazon'){
+        if(Email === 'rohitgodara@gmail.com' && Pass === 'amazon' || Email === 'godararinku@gmail.com' && Pass === 'amazon'){
             nav('/main');
-         }else if(Email == '' && Pass=='' ){
+         }else if(Email === '' || Pass==='' ){
              Setinvalideamil('enter username first');
              Setinvalidpass('enter password first');
          }else{
